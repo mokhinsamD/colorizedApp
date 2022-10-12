@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SettingViewController.swift
 //  colorizedApp
 //
 //  Created by Дарина Самохина on 28.09.2022.
@@ -7,9 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingViewController: UIViewController {
 
-    //MARK: - IB Outlets
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var redCounter: UILabel!
@@ -22,9 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         colorView.layer.cornerRadius = 15
-    
         setCounter()
         setColor()
     }
@@ -41,8 +38,10 @@ class ViewController: UIViewController {
             blueCounter.text = string(from: blueSlider)
         }
     }
-  
-    //MARK: - Private Methods
+}
+
+//MARK: - Private Methods
+extension SettingViewController {
     private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
@@ -60,6 +59,4 @@ class ViewController: UIViewController {
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
-    
 }
-

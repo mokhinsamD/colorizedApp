@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="TLW-JX-uKH">
             <objects>
-                <viewController id="1gu-ne-1J3" customClass="MainViewController" customModule="colorizedApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1gu-ne-1J3" customClass="ColorViewController" customModule="colorizedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vIi-rK-Eu8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Iw-3I-prE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="9zM-9S-JAt" firstAttribute="top" secondItem="8Iw-3I-prE" secondAttribute="top" constant="16" id="BWQ-yo-HPa"/>
                             <constraint firstItem="8Iw-3I-prE" firstAttribute="trailing" secondItem="9zM-9S-JAt" secondAttribute="trailing" constant="16" id="UU3-g6-TbM"/>
@@ -76,14 +76,14 @@
                                             <constraint firstAttribute="width" constant="85" id="8yg-Vq-FS8"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qad-Zc-INJ">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qad-Zc-INJ">
                                         <rect key="frame" x="91" y="0.0" width="206" height="35"/>
                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                         <connections>
                                             <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="15P-Z3-Ppg"/>
                                         </connections>
                                     </slider>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CfU-Kr-ZyO">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CfU-Kr-ZyO">
                                         <rect key="frame" x="303" y="0.0" width="55" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="55" id="qhI-bZ-ARL"/>
@@ -116,14 +116,14 @@
                                             <constraint firstAttribute="width" constant="85" id="lH7-4P-5tJ"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UL6-eT-bVT">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UL6-eT-bVT">
                                         <rect key="frame" x="91" y="0.0" width="206" height="35"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <connections>
                                             <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="zuk-Yx-rCt"/>
                                         </connections>
                                     </slider>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ny-7y-Wql">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ny-7y-Wql">
                                         <rect key="frame" x="303" y="0.0" width="55" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="55" id="8xQ-NZ-uyd"/>
@@ -156,14 +156,14 @@
                                             <constraint firstAttribute="width" constant="85" id="I4c-Z0-aRb"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ez3-SE-oYa">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ez3-SE-oYa">
                                         <rect key="frame" x="91" y="0.0" width="206" height="35"/>
                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                         <connections>
                                             <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6b7-2A-9oz"/>
                                         </connections>
                                     </slider>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQL-3n-Z5J">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQL-3n-Z5J">
                                         <rect key="frame" x="303" y="0.0" width="55" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="55" id="ODJ-lN-f7d"/>
@@ -180,6 +180,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdI-3h-x1Y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -203,13 +206,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueCounter" destination="5NS-jp-ALn" id="OB9-Xo-9LX"/>
+                        <outlet property="blueLabelCounter" destination="5NS-jp-ALn" id="OB9-Xo-9LX"/>
                         <outlet property="blueSlider" destination="ez3-SE-oYa" id="VNp-ST-86X"/>
+                        <outlet property="blueTFCounter" destination="IQL-3n-Z5J" id="mZm-BO-q17"/>
                         <outlet property="colorView" destination="cQ6-nf-onk" id="gn6-pV-96z"/>
-                        <outlet property="greenCounter" destination="Qb5-mf-hx9" id="Zi8-Cp-VQV"/>
+                        <outlet property="greenLabelCounter" destination="Qb5-mf-hx9" id="Zi8-Cp-VQV"/>
                         <outlet property="greenSlider" destination="UL6-eT-bVT" id="S0X-nW-eaz"/>
-                        <outlet property="redCounter" destination="jIl-Vh-Td2" id="esC-P4-UOD"/>
+                        <outlet property="greenTFCounter" destination="9Ny-7y-Wql" id="FD5-Zy-XO0"/>
+                        <outlet property="redLabelCounter" destination="jIl-Vh-Td2" id="esC-P4-UOD"/>
                         <outlet property="redSlider" destination="qad-Zc-INJ" id="86i-gx-VKA"/>
+                        <outlet property="redTFCounter" destination="CfU-Kr-ZyO" id="C8q-7f-XSV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -219,9 +225,6 @@
     </scenes>
     <resources>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

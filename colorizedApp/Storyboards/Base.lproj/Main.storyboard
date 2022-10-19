@@ -30,7 +30,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Iw-3I-prE"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9zM-9S-JAt" firstAttribute="top" secondItem="8Iw-3I-prE" secondAttribute="top" constant="16" id="BWQ-yo-HPa"/>
                             <constraint firstItem="8Iw-3I-prE" firstAttribute="trailing" secondItem="9zM-9S-JAt" secondAttribute="trailing" constant="16" id="UU3-g6-TbM"/>
@@ -89,7 +89,7 @@
                                             <constraint firstAttribute="width" constant="55" id="qhI-bZ-ARL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -129,7 +129,7 @@
                                             <constraint firstAttribute="width" constant="55" id="8xQ-NZ-uyd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -169,7 +169,7 @@
                                             <constraint firstAttribute="width" constant="55" id="ODJ-lN-f7d"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -206,16 +206,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueLabelCounter" destination="5NS-jp-ALn" id="OB9-Xo-9LX"/>
+                        <outlet property="blueLabel" destination="5NS-jp-ALn" id="OB9-Xo-9LX"/>
                         <outlet property="blueSlider" destination="ez3-SE-oYa" id="VNp-ST-86X"/>
-                        <outlet property="blueTFCounter" destination="IQL-3n-Z5J" id="mZm-BO-q17"/>
+                        <outlet property="blueTextField" destination="IQL-3n-Z5J" id="mZm-BO-q17"/>
                         <outlet property="colorView" destination="cQ6-nf-onk" id="gn6-pV-96z"/>
-                        <outlet property="greenLabelCounter" destination="Qb5-mf-hx9" id="Zi8-Cp-VQV"/>
+                        <outlet property="greenLabel" destination="Qb5-mf-hx9" id="Zi8-Cp-VQV"/>
                         <outlet property="greenSlider" destination="UL6-eT-bVT" id="S0X-nW-eaz"/>
-                        <outlet property="greenTFCounter" destination="9Ny-7y-Wql" id="FD5-Zy-XO0"/>
-                        <outlet property="redLabelCounter" destination="jIl-Vh-Td2" id="esC-P4-UOD"/>
+                        <outlet property="greenTextField" destination="9Ny-7y-Wql" id="FD5-Zy-XO0"/>
+                        <outlet property="redLabel" destination="jIl-Vh-Td2" id="esC-P4-UOD"/>
                         <outlet property="redSlider" destination="qad-Zc-INJ" id="86i-gx-VKA"/>
-                        <outlet property="redTFCounter" destination="CfU-Kr-ZyO" id="C8q-7f-XSV"/>
+                        <outlet property="redTextField" destination="CfU-Kr-ZyO" id="C8q-7f-XSV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
